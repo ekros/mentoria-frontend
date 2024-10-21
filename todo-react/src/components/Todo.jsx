@@ -69,7 +69,7 @@ function Todo(props) {
         <input
           id={props.id}
           type="checkbox"
-          checked={false} /* ! */
+          defaultChecked={props.completed}
           onChange={() => props.toggleTaskCompleted(props.id)}
           data-testid={`todo-checkbox${props.id}`}
         />
@@ -107,8 +107,7 @@ function Todo(props) {
     }
   }, [wasEditing, isEditing]);
 
-  // ! next line
-  return <li className="todo">{viewTemplate}</li>;
+  return <li className="todo">{isEditing ? editingTemplate : viewTemplate}</li>;
 }
 
 export default Todo;

@@ -22,7 +22,7 @@ const FILTER_NAMES = Object.keys(FILTER_MAP);
 
 function App(props) {
   const [tasks, setTasks] = useState(props.tasks);
-  // !
+  const [filter, setFilter] = useState("All");
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map((task) => {
@@ -38,7 +38,8 @@ function App(props) {
   }
 
   function deleteTask(id) {
-    // !
+    const remainingTasks = tasks.filter((task) => id !== task.id);
+    setTasks(remainingTasks);
   }
 
   function editTask(id, newName) {
@@ -54,7 +55,9 @@ function App(props) {
     setTasks(editedTaskList);
   }
 
-  const taskList = tasks.map((task) => ( // !
+  const taskList = tasks
+    ?.filter(FILTER_MAP[filter])
+    .map((task) => (
       <Todo
         id={task.id}
         name={task.name}
@@ -70,14 +73,14 @@ function App(props) {
     <FilterButton
       key={name}
       name={name}
-      // !
-      // !
+      isPressed={name === filter}
+      setFilter={setFilter}
     />
   ));
 
   function addTask(name) {
     const newTask = { id: "todo-" + nanoid(), name: name, completed: false };
-    // !
+    setTasks([...tasks, newTask]);
   }
 
   const tasksNoun = taskList.length !== 1 ? "tasks" : "task";

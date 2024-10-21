@@ -1,5 +1,13 @@
 # todo-react
 
+**
+Ths assessment is based on the MDN to-do app. The original README can be found below these lines. The assessment can be found in the `assessment` branch. The final solution is in the `main` branch. Some tests have been to evaluate progress (they can be run by typing `npm run test`).
+
+There are some missing parts in the code (some lines, only partially) that are required for the tests to pass. They are marked with a comment and an exclamation (if you install the Better Comments extension on vscode they will be displayed in red color).
+
+This can be completed in 1-2 hours.
+**
+
 Sample todo app built with the React/ReactDOM framework. For the accompanying documentation, see
 [Understanding client-side JavaScript frameworks
 : React tutorials](https://wiki.developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks#React_tutorials).

@@ -84,7 +84,7 @@ describe("Test filters", () => {
         } />);
         const filterAll = screen.getByText("All");
         await user.click(filterAll);
-        expect(screen.queryAllByTestId("todo-label").length).toBe(1);
+        expect(screen.queryAllByTestId("todo-label").length).toBe(2);
     });
     test("Should filter by active", async () => {
         const user = userEvent.setup();

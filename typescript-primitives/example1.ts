@@ -9,13 +9,13 @@
 
 const num1 = 1;
 const num2 = 2;
-const result = num1 + num2;
+const result1 = num1 + num2;
 console.log("sum:", result);
 
 
 // functions
-const sum = (n1: number, n2: number): number => {
+const sum1 = (n1: number, n2: number): number => {
     return n1 + n2;
 }
 
-const suma: string = sum(num1, num2);
+const sumResult: string = sum(num1, num2);

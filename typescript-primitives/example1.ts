@@ -18,4 +18,4 @@ const sum = (n1: number, n2: number): number => {
     return n1 + n2;
 }
 
-sum(num1, num2);
+const suma: string = sum(num1, num2);

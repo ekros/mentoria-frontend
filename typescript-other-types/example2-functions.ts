@@ -1,8 +1,7 @@
 
 // functions
 
-// the function rollercoasterCase takes a string and uppercases
-// only the even letters.
+// the function rollercoasterCase takes a string and uppercases only the even letters.
 // for example: brilliant! -> BrIlLiAnT!
 
 let rollercoasterCase; // 1. add types for this function

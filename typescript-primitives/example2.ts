@@ -8,4 +8,4 @@ const sum2 = (n1: number, n2: number): number => {
     return n1 + n2;
 }
 
-const sumResult2: boolean = sum("2", 2);
+const sumResult2: boolean = sum2("2", 2);

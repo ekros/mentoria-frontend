@@ -1,6 +1,6 @@
-# Other Typescript types
+# Typescript interfaces
 
-This is a simple project to practice with other TS types (not primitives)
+This is a simple project to practice with TS interfaces
 
 ## Prerequisites
 

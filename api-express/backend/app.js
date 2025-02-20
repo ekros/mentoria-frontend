@@ -53,6 +53,7 @@ app.put('/personas', (req, res) => {
 // 4. completa la ruta faltante en el siguiente endpoint
 // se utiliza para eliminar una persona y recibe el nombre de la persona como parametro
 // correr el fichero delete-persona.js para probarlo
+// pista: leer apartado Route parameters de aquí: https://expressjs.com/en/guide/routing.html
 app.delete('', (req, res) => { // cual es la ruta?
   deletePersona(req.params.name);
   res.send('ok');

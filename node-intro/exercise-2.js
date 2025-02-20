@@ -2,6 +2,7 @@
 // created in the previous exercise
 
 const http = require('http');
+const fs = require("fs");
 
 // create server
 const server = http.createServer((req, res) => {

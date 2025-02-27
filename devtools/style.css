@@ -1,0 +1,7 @@
+.small-images > img {
+    height: 50px;
+}
+
+.medium-images > img {
+    height: 200px;
+}

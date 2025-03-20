@@ -10,4 +10,4 @@ function countCharacter(str, char) {
     return count;
   }
 
-countCharacter("banana", "a"); // expected: 3
+console.log(countCharacter("banana", "a")); // expected: 3

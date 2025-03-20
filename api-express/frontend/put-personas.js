@@ -5,8 +5,6 @@ const API_URL = "http://localhost:3000";
 // solo nos falta añadir el apellido y edad a los parámetros enviados en el body del mensaje
 // Utiliza para ello los valores que quieras
 
-// Cuando hayas hecho el cambio, tienes que ejecutar primero post-personas.js para añadir la persona
-
 fetch(`${API_URL}/personas`,
     {
         method: 'PUT',

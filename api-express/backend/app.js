@@ -61,7 +61,7 @@ app.delete('', (req, res) => { // cual es la ruta?
 
 // 5. necesitamos un endpoint que devuelva una única persona basada en su nombre
 // sabrías hacerlo, observando únicamente el código de los endpoints anteriores?
-// no es necesario tocar el archivo sqlite3.js
+// no es necesario tocar el archivo sqlite3.js (es decir, que hay que buscar y luego devolver solo el que tiene el nombre que le pasamos por parámetro)
 // puedes probar el endpoint corriendo el fichero get-persona-by-name.js
 // Recuerda que al reiniciar el backend desaparece la base de datos, por lo que debes volver a añadir una persona
 

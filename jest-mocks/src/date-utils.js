@@ -7,15 +7,10 @@
 // fix a test that is not repeatable
 
 const getRandomDay = () => {
-    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     return days[Math.floor(Math.random() * 7)]
 };
 
 module.exports = {
   getRandomDay
 }
-
-
-// TODO-ING: add another function that uses an installed dependency we can mock
-// make clear the difference between mock and spy
-// write exercise wording
